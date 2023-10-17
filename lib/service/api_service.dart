@@ -6,11 +6,11 @@ import '../models/webtoon.dart';
 
 
 class ApiService {
-  final String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
-  final String today = "today";
+  static const String baseUrl = "https://webtoon-crawler.nomadcoders.workers.dev";
+  static const String today = "today";
 
   //fetch
-  Future<List<WebtoonModel>> getTodaysToons() async {
+  static Future<List<WebtoonModel>> getTodaysToons() async {
     List<WebtoonModel> webtoonInstatnces = [];
     final url = Uri.parse('$baseUrl/$today');
     final response = await http.get(url);
