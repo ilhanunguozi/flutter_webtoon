@@ -27,6 +27,7 @@ class HomeScreen extends StatelessWidget {
         elevation: 2,
         backgroundColor: Colors.white,
         foregroundColor: Colors.green,
+
       ),
       body: FutureBuilder(
         future: webtoons,
